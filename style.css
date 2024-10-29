@@ -35,15 +35,37 @@ body{
     margin-right: 20px;
 }
 
+.product-info{
+    margin-top: 100px;
+}
+
+.product-name{
+    font-size: 30px;
+}
+
 .rupees-icon{
     height: 12px;
 }
 
 .quantity-container{
     padding: 5px;
+    width: 55px;
+    padding: 6px 9px;
+    margin: 30px;
 }
 
 .quantity-icon{
     height: 12px;
+    margin: 2px;
+}
+
+.buy-now-btn{
+    padding: 10px 40px;
+    margin: 50px 0;
+    font-size: 15px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 2px;
 }
 
