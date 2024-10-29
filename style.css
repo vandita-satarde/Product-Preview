@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    height: 50px;
+    background-color: rgb(219, 190, 137);
+}
+
+.container{
+    width: 1200px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    margin: 20px auto;
+}
+
+.sub-imgs-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 20px 0 300px;
+}
+
+.sub-imgs{
+    height: 80px;
+}
+
+.border{
+    border: 2px solid black;
+}
+
+.main-img{
+    height: 600px;
+    margin-right: 20px;
+}
+
+.rupees-icon{
+    height: 12px;
+}
+
+.quantity-container{
+    padding: 5px;
+}
+
+.quantity-icon{
+    height: 12px;
+}
+
