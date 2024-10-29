@@ -24,14 +24,30 @@
              <p class="product-name">Textured Polo T-Shirt</p>
              <img src="./images/rupees-icon.png" class="rupees-icon"> 2,600/-
              <div class="quantity-container border">
-                <img src="./images/minus.png" class="quantity-icon">
-                <span class="quantity-num">1</span>
-                <img src="./images/plus.png" class="quantity-icon">
+                <img src="./images/minus.png" class="quantity-icon" onclick="decrease()">
+                <span id="quantity-num">1</span>
+                <img src="./images/plus.png" class="quantity-icon" onclick="increase()">
              </div>
 
              <button class="buy-now-btn">Buy Now</button>
         </div>
     </div>
 
+
+    <script>
+        const quantityElement = document.getElementById('quantity-num');
+
+        function increase(){
+            let quantity = parseInt(quantityElement.innerText);
+            quantityElement.innerText = ++quantity;
+        }
+
+        function decrease(){
+            let quantity = parseInt(quantityElement.innerText);
+            if(quantity > 0){
+                quantityElement.innerText = --quantity;
+            }
+        }
+    </script>
 </body>
 </html>
