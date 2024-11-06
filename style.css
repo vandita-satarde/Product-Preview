@@ -85,7 +85,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
@@ -126,4 +126,8 @@ body{
     color: white;
     border-radius: 2px;
     cursor: pointer;
+}
+
+.btn-cancel:hover{
+    background-color: rgb(123, 123, 234);
 }

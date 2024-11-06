@@ -29,14 +29,14 @@
                 <img src="./images/plus.png" class="quantity-icon" onclick="increase()">
              </div>
 
-             <button class="buy-now-btn">Buy Now</button>
+             <button class="buy-now-btn" onclick="openPopUp()">Buy Now</button>
         </div>
     </div>
 
-    <div class="overlay">
+    <div class="overlay" id="overlay">
         <div class="pop-up">
             <form>
-                <b style="font-size: 25px;">ORDER NOW</b>
+                <h1>Order Now</h1>
                 <div class="price-d">
                     <p style="color: rgb(62, 61, 61);">
                         Items:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;2 
@@ -53,7 +53,7 @@
                 <br/>
                 <p style="font-size: 18px;">Arriving on <b  style="color: rgb(79, 79, 226);">15 Nov 2023</b></p>
                 <button class="btn-order">Place your order</button>
-                <button class="btn-cancel">Cancel</button>
+                <button class="btn-cancel" onclick="closePopUp()">Cancel</button>
             </form>
         </div>
     </div>
@@ -78,6 +78,19 @@
         function switchImage(image){
             const mainImage = document.getElementById('main-img');
             mainImage.src = image;
+        }
+
+
+        //OVERLAY
+
+        function openPopUp(){
+            const overlayElement = document.getElementById('overlay');
+            overlayElement.style.display = 'flex';
+        }
+
+        function closePopUp(){
+            const overlayElement = document.getElementById('overlay');
+            overlayElement.style.display = 'none';
         }
     </script>
 </body>
