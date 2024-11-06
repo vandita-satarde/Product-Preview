@@ -92,7 +92,7 @@ body{
 
 .pop-up{
     background-color: white;
-    height: 450px;
+    height: 500px;
     width: 400px;
     padding: 13px;
     border: 2px solid black;
@@ -115,4 +115,15 @@ body{
 
 .btn-order:hover{
     background-color: rgb(72, 71, 71);
+}
+
+.btn-cancel{
+    padding: 15px 72px;
+    margin: 5px 100px 0 100px;
+    font-size: 15px;
+    border: none;
+    background-color: rgb(85, 85, 230);;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
 }
